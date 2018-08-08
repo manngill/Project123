@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ElectricityBillViewController.swift
 //  classProject
 //
 //  Created by MacStudent on 2018-08-08.
@@ -8,18 +8,24 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ElectricityBillViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    @IBAction func btnCalculateClick(_ sender: UIButton)
+    {
+         performSegue(withIdentifier: "nv", sender: self)
+    }
+    
 
-
+    
 }
-
